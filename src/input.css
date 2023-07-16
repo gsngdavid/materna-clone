@@ -20,6 +20,14 @@
         @apply flex items-center gap-4 py-3 px-7 text-white hover:underline hover:bg-red-dark
     }
 
+    .hero-link {
+        @apply block text-center text-sm py-2 bg-red-primary hover:bg-red-dark hover:underline
+    }
+
+    .hero-block-link {
+        @apply inline-block w-[6px] h-[6px] transform -rotate-45 border-r-2 border-b-2 border-white;
+    }
+
     .portfolio-title {
         @apply text-lg text-red-primary hover:text-inherit hover:underline
     }
