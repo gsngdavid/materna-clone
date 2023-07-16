@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+
+    .container {
+        @apply max-w-[1350px] mx-auto px-4
+    }
+
     .header-link {
         @apply hover:text-red-primary hover:underline
     }
