@@ -608,6 +608,58 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.icon-container {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: grid;
+  place-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 10 23 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.top-icon {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-top-width: 2px;
+  border-right-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.carousel-link {
+  position: absolute;
+  inset: 0px;
+  background-color: rgb(0 0 0 / 0.1);
+}
+
+.carousel-link:hover {
+  background-color: transparent;
+}
+
+.carousel-dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 10 23 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.carousel-dot:hover {
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 10 14 / var(--tw-bg-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -632,6 +684,11 @@ video {
   top: 0.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -639,6 +696,14 @@ video {
 
 .-mt-16 {
   margin-top: -4rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -649,12 +714,8 @@ video {
   margin-top: 1.75rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -673,6 +734,14 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -685,8 +754,8 @@ video {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
+.w-2 {
+  width: 0.5rem;
 }
 
 .w-48 {
@@ -746,8 +815,16 @@ video {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -756,6 +833,12 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .self-end {
@@ -797,6 +880,11 @@ video {
   background-color: #ffffffe6;
 }
 
+.bg-gray-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 62 65 / var(--tw-bg-opacity));
+}
+
 .bg-red-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(195 10 23 / var(--tw-bg-opacity));
@@ -805,10 +893,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
 }
 
 .bg-hero {
@@ -867,22 +951,9 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .pb-4 {
@@ -893,6 +964,11 @@ video {
   text-align: center;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -901,6 +977,16 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-\[\#3a3e41\] {
@@ -927,8 +1013,16 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

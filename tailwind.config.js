@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "red-primary": "#c30a17"
+        "red-primary": "#c30a17",
+        "red-dark": "#780a0e",
+        "gray-dark": "#3a3e41",
       },
       backgroundImage: {
-        "hero": "url('../images/hero-bg.svg')"
+        "hero": "url('../images/hero-bg.svg')",
       }
     },
   },
