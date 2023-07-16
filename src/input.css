@@ -6,4 +6,8 @@
     .header-link {
         @apply hover:text-red-primary hover:underline
     }
+
+    .nav-link {
+        @apply py-3 px-9 text-lg text-white whitespace-nowrap bg-red-primary hover:bg-black/30 hover:underline
+    }
 }
